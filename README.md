@@ -21,3 +21,16 @@ or a console application).
 
 Based on this, it does not really make sense to use it on
 its own.
+
+## symfony/console
+
+Used to create console applications. You could use it
+completely standalone and just instantiate a new `Application`,
+or use it alongside the runtime component and return
+a closure from `bin/console`, or use `symfony/http-kernel`
+and pass it to the `Application` (or some custom implementation
+of the `HttpKernelInterface`) or use the whole
+`symfony/framework-bundle` which comes packed with the
+`HttpKernel\Kernel` as well as other things you would want
+like dependency injection, automatic command registration
+via tags, and environment configuration.
