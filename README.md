@@ -91,3 +91,10 @@ functions and classes in older PHP versions.
 - symfony/routing: Provides routing functionality, which matches
 incoming requests to controllers or other response handlers
 based on URL patterns and rules.
+
+## symfony/dotenv
+
+Used to load environment-aware `.env` files. If `symfony/runtime`
+is used, `Dotenv` will automatically be booted by `SymfonyRuntime`,
+which again is used by `autoload_runtime.php` (see runtime
+section).
