@@ -98,3 +98,9 @@ Used to load environment-aware `.env` files. If `symfony/runtime`
 is used, `Dotenv` will automatically be booted by `SymfonyRuntime`,
 which again is used by `autoload_runtime.php` (see runtime
 section).
+
+## symfony/twig-bundle
+
+Integrates Twig into Symfony. Makes the `render()` method of the
+`AbstractController` available. Adds Twig`s `Environment` to the
+service container.
