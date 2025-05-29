@@ -1,10 +1,10 @@
 {
     "require": {
-        "symfony/runtime": "^7.2",
-        "symfony/console": "^7.2",
-        "symfony/framework-bundle": "^7.2",
-        "symfony/dotenv": "^7.2",
-        "symfony/twig-bundle": "^7.2",
+        "symfony/runtime": "^7.3",
+        "symfony/console": "^7.3",
+        "symfony/framework-bundle": "^7.3",
+        "symfony/dotenv": "^7.3",
+        "symfony/twig-bundle": "^7.3",
         "symfony/asset-mapper": "^7.3"
     },
     "config": {
