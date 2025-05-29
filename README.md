@@ -104,3 +104,19 @@ section).
 Integrates Twig into Symfony. Makes the `render()` method of the
 `AbstractController` available. Adds Twig`s `Environment` to the
 service container.
+
+## symfony/asset-mapper
+
+Used to manage JS, CSS, and assets in general without need for
+a builder. Makes use of modern Browser's module support.
+
+- use `importmap:` commands to manage dependencies and add them
+to the importmap.php
+- entries marked as `entrypoint: true` will be available via
+`importmap('name')` Twig function
+- using that command leads to a `<script type="importmap" ...>`
+as well as `<script>import 'name';</script>` being added to the
+rendered page
+
+- use `asset-map:compile` to actually put all assets into the public dir for
+production as opposed to having Symfony's internals load them

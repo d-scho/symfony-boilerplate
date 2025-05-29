@@ -4,7 +4,8 @@
         "symfony/console": "^7.2",
         "symfony/framework-bundle": "^7.2",
         "symfony/dotenv": "^7.2",
-        "symfony/twig-bundle": "^7.2"
+        "symfony/twig-bundle": "^7.2",
+        "symfony/asset-mapper": "^7.3"
     },
     "config": {
         "allow-plugins": {
