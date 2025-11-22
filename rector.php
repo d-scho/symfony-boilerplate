@@ -18,6 +18,7 @@ return RectorConfig::configure()
         __DIR__ . '/config',
         __DIR__ . '/public/index.php',
         __DIR__ . '/src',
+        __DIR__ . '/.php-cs-fixer.php',
         __DIR__ . '/rector.php',
     ])
     ->withAttributesSets(symfony: true)

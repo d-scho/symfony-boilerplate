@@ -13,7 +13,8 @@
         "phpstan/phpstan-symfony": "^2.0",
         "phpstan/phpstan-deprecation-rules": "^2.0",
         "spaze/phpstan-disallowed-calls": "^4.7",
-        "rector/rector": "^2.2"
+        "rector/rector": "^2.2",
+        "friendsofphp/php-cs-fixer": "^3.86"
     },
     "config": {
         "allow-plugins": {
@@ -29,6 +30,8 @@
     "scripts": {
       "phpstan": "phpstan",
       "rector": "rector --dry-run",
-      "rector:fix": "rector"
+      "rector:fix": "rector",
+      "cs": "php-cs-fixer fix --dry-run -vvv --diff",
+      "cs:fix": "php-cs-fixer fix"
     }
 }
