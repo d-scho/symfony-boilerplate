@@ -12,7 +12,8 @@
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-symfony": "^2.0",
         "phpstan/phpstan-deprecation-rules": "^2.0",
-        "spaze/phpstan-disallowed-calls": "^4.7"
+        "spaze/phpstan-disallowed-calls": "^4.7",
+        "rector/rector": "^2.2"
     },
     "config": {
         "allow-plugins": {
@@ -26,6 +27,8 @@
         }
     },
     "scripts": {
-      "phpstan": "phpstan"
+      "phpstan": "phpstan",
+      "rector": "rector --dry-run",
+      "rector:fix": "rector"
     }
 }

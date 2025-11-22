@@ -10,3 +10,4 @@ parameters:
     - bin/
     - config/
     - src/
+    - rector.php
