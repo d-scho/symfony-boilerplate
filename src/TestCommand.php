@@ -20,7 +20,10 @@ final class TestCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln(sprintf('Input: "%s"', $input->getArgument('input')));
+        $arg = $input->getArgument('input');
+        assert(is_string($arg));
+
+        $output->writeln(sprintf('Input: "%s"', $arg));
 
         return Command::SUCCESS;
     }

@@ -1,0 +1,12 @@
+includes:
+    - vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon
+parameters:
+  level: 10
+  symfony:
+    containerXmlPath: var/cache/test/App_KernelTestDebugContainer.xml
+  scanDirectories:
+    - var/cache/test/Symfony/Config
+  paths:
+    - bin/
+    - config/
+    - src/
