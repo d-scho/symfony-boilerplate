@@ -12,5 +12,6 @@ parameters:
     - bin/
     - config/
     - src/
+    - tests/
     - .php-cs-fixer.php
     - rector.php

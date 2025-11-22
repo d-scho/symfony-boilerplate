@@ -12,9 +12,12 @@
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-symfony": "^2.0",
         "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
         "spaze/phpstan-disallowed-calls": "^4.7",
         "rector/rector": "^2.2",
-        "friendsofphp/php-cs-fixer": "^3.86"
+        "friendsofphp/php-cs-fixer": "^3.86",
+        "phpunit/phpunit": "^12.4",
+        "symfony/browser-kit": "^7.3"
     },
     "config": {
         "allow-plugins": {
@@ -27,11 +30,18 @@
             "App\\": "src/"
         }
     },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    },
     "scripts": {
       "phpstan": "phpstan",
       "rector": "rector --dry-run",
       "rector:fix": "rector",
       "cs": "php-cs-fixer fix --dry-run -vvv --diff",
-      "cs:fix": "php-cs-fixer fix"
+      "cs:fix": "php-cs-fixer fix",
+      "phpunit": "phpunit",
+      "phpunit:coverage": "XDEBUG_MODE=coverage php -d memory_limit=2G -d pcre.jit=0 vendor/bin/phpunit --coverage-html .phpunit-reports/html --coverage-cobertura .phpunit-reports/coverage-cobertura.xml --log-junit .phpunit-reports/junit.xml --coverage-text"
     }
 }
